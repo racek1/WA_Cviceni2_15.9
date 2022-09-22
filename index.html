@@ -7,8 +7,8 @@
     <title>Prodej automobilů</title>
 </head>
 <body>
-    <h1>Prodej automobilů</h1>
-    <p>Prodáváme osobní vozidla za skvělé ceny</p>
+    <h1>ඞProdej automobilůඞ</h1>
+    <p>Prodáváme auta</p>
     <table>
         <tr>
             <th>Značka</th>
@@ -54,9 +54,26 @@
         </tr>
     </table>
     <nav>
-        <a href = "contact.html">Kontakty</a>
+        <iframe id = "iframe" src="" width="500" height="500"></iframe>
         <br>
-        <a href = "about.html">O nás</a>
+        <button onclick="swithToContacts()">Kontakty</button>
+        <br>
+        <button onclick="swithToAbout()">O nás</button>
+
     </nav>
 </body>
+
+<script>
+    function swithToContacts() 
+    {
+       var newSrc = "contact.html";
+       document.getElementById("iframe").src=newSrc;
+    }
+
+    function swithToAbout() 
+    {
+       var newSrc = "about.html";
+       document.getElementById("iframe").src=newSrc;
+    }
+</script>
 </html>
